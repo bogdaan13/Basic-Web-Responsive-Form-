@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #15191C;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  padding: 1em
+}
+
+.contenido{
+  max-width: 1000px;
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenido h1{
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.35em;
+  color: #2840FC;
+  margin: .3em 0 .6em 0;
+  height: auto;
+  width: auto;
+}
+
+.contenedor{
+  display: grid;
+  font-size: .95rem;
+  height: auto;
+  width: auto;
+  box-shadow: 0 0 20px 0 rgba(255,255,255, .5)
+}
+
+.formBlock{
+  max-width: 66%
+  padding: 1.2em;
+  background:#31353C;
+  height: auto;
+  width: auto;
+}
+
+.formBlock form{
+  display:grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.formBlock form p{
+  margin: 0;
+  padding: 1em;
+}
+
+.formBlock form .bloque{
+  grid-column: 1 / 3
+}
+
+.formBlock form input,
+.formBlock form textarea {
+  min-width: 200px;
+  width: 100%;
+  padding: .5em;
+  border: none;
+  background: #1A252E;
+  border-bottom: solid 1px blue;
+  outline: none;
+  color: white
+}
+
+.formBlock button{
+  background: #2840FC;
+  width: 100%;
+  border: none;
+  padding: 0.5em;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  padding: .6em;
+}
+
+.formBlock form button:hover,
+.formBlock form buttom:focus{
+  background: #0B2942;
+  transition: background-color .15s ease-out;
+}
+
+.formBlock form label{
+  position: relative;
+  top: -0.15em
+}
+
+.formBlock form textarea{
+  max-height: 8em;
+  max-width: 100%
+}
+
+.formBlock input, label{
+  font-weight: 100
+}
+
+.infoBlock{
+  max-width: 100%;
+  padding: 1em;
+  background: #282C32;
+  box-shadow: 0 0 20px -3 rgba(255, 255, 255);
+}
+
+.infoBlock ul{
+  list-style: none;
+  text-align: center;
+}
+
+.infoBlock ul li{
+  padding: .3em;
+  text-align: center;
+}
+
+.infoBlock h4{
+  font-weight: 500;
+  text-align: center;
+}
+
+a{
+  color: white
+}
+
+a:hover{
+  color: #706777
+}
+
+.infoBlock p{
+  text-align:center;
+}
+/*Pantallas grandes*/
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contenedor > * {
+        padding: 2em;
+    }
+    .infoBlock h4,
+    .infoBlock ul,
+    .infoBlock p {
+        text-align: center;
+        padding: 1em
+    }
+    .infoBlock ul li{
+      text-align: center;
+      padding: 1.4em 0;
+      margin-left: none
+
+    }
+    .infoBlock ul{
+      height: 15em
+    }
+    .infoBlock{
+      width: 15em
+    }
+}
+}
